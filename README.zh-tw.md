@@ -77,7 +77,7 @@ Git 和 Github 秘笈，靈感來自於 [Zach Holman](https://github.com/holman)
 [*詳見 GitHub secrets.*](https://github.com/blog/967-github-secrets)
 
 ### 調整 Tab 字串所代表的空格數
-在 diff 或文件的 URL 後面加上 `?ts=4` ，這樣當顯示 tab 字串的長度時就會是 4 個空格的長度，不再是默認的 8 個空格。 `ts` 後面的數字還可以根據你個人的偏好進行修改。這個技巧不適用於 Gists，或者以 Raw 格式查看文件， 但有瀏覽器擴展插件可以幫你自動調整: [Chrome 擴展](https://chrome.google.com/webstore/detail/github-tab-size/ofjbgncegkdemndciafljngjbdpfmbkn) ， [Opera 擴展](https://addons.opera.com/en/extensions/details/github-tab-size/)。
+在 diff 或文件的 URL 後面加上 `?ts=4` ，這樣當顯示 tab 字串的長度時就會是 4 個空格的長度，不再是默認的 8 個空格。 `ts` 後面的數字還可以根據你個人的偏好進行修改。這個技巧不適用於 Gists，或者以 Raw 格式查看文件， 但有瀏覽器擴展插件可以幫你自動調整: [Chrome 擴展](https://chrome.google.com/webstore/detail/github-tab-size/ofjbgncegkdemndciafljngjbdpfmbkn)。
 
 下面以一個 Go 語言原始碼為例，看看在 URL 裡添加 `?ts=4` 參數的效果。添加前：
 
@@ -107,8 +107,8 @@ $ git clone https://github.com/tiimgreen/github-cheat-sheet
 
 [*更多對 Git `clone` 命令的介紹.*](http://git-scm.com/docs/git-clone)
 
-###分支
-####將某個分支與其他所有分支進行比對
+### 分支
+#### 將某個分支與其他所有分支進行比對
 
 當你查看某個倉庫的分支（Branches）頁面（緊挨著 Commits 連接）時
 
@@ -905,7 +905,7 @@ $ git config --global alias.ac 'add -A . && commit'
 | `git st` | `git status -sb` | `git config --global alias.st 'status -sb'` |
 | `git tags` | `git tag -l` | `git config --global alias.tags 'tag -l'` |
 | `git branches` | `git branch -a` | `git config --global alias.branches 'branch -a'` |
-| `git cleanup` | `git branch --merged | grep -v '*' | xargs git branch -d` | `git config --global alias.cleanup "!git branch --merged | grep -v '*' | xargs git branch -d"` |
+| `git cleanup` | `git branch --merged \| grep -v '*' \| xargs git branch -d` | `git config --global alias.cleanup "!git branch --merged \| grep -v '*' \| xargs git branch -d"` |
 | `git remotes` | `git remote -v` | `git config --global alias.remotes 'remote -v'` |
 | `git lg` | `git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --` | `git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --"` |
 
@@ -954,7 +954,6 @@ $ git config --global color.ui 1
 | Official Git Tutorial | http://git-scm.com/docs/gittutorial |
 | Everyday Git | http://git-scm.com/docs/everyday |
 | Git Immersion | http://gitimmersion.com/ |
-| Ry's Git Tutorial | http://rypress.com/tutorials/git/index.html |
 | Git for Computer Scientists | http://eagain.net/articles/git-for-computer-scientists/ |
 | Git Magic | http://www-cs-students.stanford.edu/~blynn/gitmagic/ |
 | GitHub Training Kit | http://training.github.com/kit |
